@@ -1,47 +1,27 @@
 # Front End Website (HTML and JavaScript)
 
-A small 3-page website for the skill-based assessment. The website's theme is a personal blog about nail polishes.
+A small 4-page website for the skill-based assessment. The website's theme is a personal blog about nail polishes.
 
-## Project Structure
-- Images
-  - Various images
-- Pages
-  - index.html
-  - about.html
-  - contact.html
-  - main.js
-- Styles
-  - styles.css
+## Pages
+HTML pages use at least 10 different HTML tags, tables, two uses for forms, Dropped Down Menu, web fonts, different types of content in the form of text, images, videos, and GIFs, and regex validation.
 
-## Technical specifications
-
-HTML
-- Have at least 3 pages, keep the grid system consistent as much as possible
-- Use at least 10 different HTML tags
-- Use HTML tables
-- Implement at least two uses for forms
-- Dropped Down Menu
-- Use web fonts
-- Use different types of content in the form of text, images, videos, and GIFs
-- Use regex validation
-
-CSS
-- Inline, internal, and external styling
-- Use five different CSS selectors
-- Don’t use too many fonts
-- Use colors that complement each other
-- Use Flexbox (Optional)
-- Use SASS/SCSS (Optional)
-- Use animations (Optional)
-
-JavaScript
-- External scripts
-- Use variables, if statements, loops, at least one form of collections,
+JS external script uses variables, if statements, loops, at least one form of collections,
 functions/callbacks, and events.
-- Use AJAX (Optional)
-- Use JSON or XML (Optional)
-- Use JQuery (Optional)
 
+- Pages
+  - index.html - Home page featuring blog posts
+  - about.html - About the website and site owner with links to socials
+  - contact.html - Form to contact site owner and form to submit suggestions 
+  - blog.html Page with stub posts
+  - contact.js - Javascript script for contact.html
+  - blog.js - Javascript script for blog.html
+- Styles - 
+  - styles.css - CSS Styling sheet
+
+  ## Styles
+- In-line styling
+- Internal styling
+- External style sheet styles.css that includes but not limited to colors, fonts, at least 5 selectors, animations, and flexbox.
 
 ## Link
 [GitHub Project Repository](https://github.com/aventon1/FrontEndWebsite)
