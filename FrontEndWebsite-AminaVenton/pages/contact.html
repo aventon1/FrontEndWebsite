@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+    </head>
+
+    <style>
+        body {background-color: rgb(251, 254, 255);}
+        h1   {color: rgb(48, 3, 61);}
+    </style>
+
+    <body>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="#">Menu</a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </nav>
+
+        <div class="contactContainer">
+            <div class="contactColumn">
+                <div class="contactHeader">
+                    <h1>Contact</h1>
+                </div>
+        
+                <div class="contact">
+                    <p>Let’s talk! Don’t hesitate to reach out! Send me a message using the form.</p>
+                    <form action="#">
+                        <div class="contactInfo">
+                            <label for="subject">Subject</label>
+                            <select name="subject" id="subject">
+                              <option value="general">General</option>
+                              <option value="marketing">Marketing</option>
+                              <option value="technical_issue">Technical Issue</option>
+                            </select>
+                            <br>
+                            <br>
+                            <label for="name">Name (required)</label> 
+                            <input type="text" name="name" id="name" required />
+                            <br>
+                            <br>
+                            <label for="email">Email (required) </label> 
+                            <input type="email" name="email" id="email" pattern="^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$" required />
+                            <br>
+                            <br>
+                            <label for="message">Message</label> 
+                            <textarea id="message" name="message" required></textarea>
+                            <br>
+                            <br>
+                            <input type="submit" id="button" value="Submit Contact Info">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="suggestionColumn">
+                <div class="suggestionHeader">
+                    <h1>Suggestions</h1>
+                </div>
+        
+                <div class="suggestion">
+                    <p>I would love to hear suggestions on the next polish I try 💅 Let me know what you think.</p>
+                    <form action="#">
+                        <div class="suggestionInfo">
+                            <label for="suggestion">Polish</label>
+                            <select name="suggestion" id="suggestion">
+                              <option value="color">Color</option>
+                              <option value="color">Collection</option>
+                            </select>
+                            <br>
+                            <br>
+                            <label for="name2">Name (required)</label> 
+                            <input type="text" name="name2" id="name2" required />
+                            <br>
+                            <br>
+                            <label for="email2">Email (required) </label> 
+                            <input type="email" name="email2" id="email2" pattern="^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$" required />
+                            <br>
+                            <br>
+                            <label for="message2">Message</label> 
+                            <textarea id="message2" name="message2" required></textarea>
+                            <br>
+                            <br>
+                            <input type="submit" id="button2" value="Submit Suggestion">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+
+        <script type="text/javascript" src="contact.js"></script>
+    </body>
+
+</html>

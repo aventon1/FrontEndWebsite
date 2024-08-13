@@ -1,0 +1,212 @@
+body {
+    margin: 0px;
+    font-family: Garamond, serif;
+}
+
+.navbar ul {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: blueviolet;
+    font-family: "Lily Script One", system-ui;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.navbar li{
+    height: 50px;
+
+}
+
+.navbar {
+    position: relative;
+    z-index: 999;
+}
+
+.navbar a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 30px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar ul ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+  }
+
+  .navbar ul ul li {
+    display: block;
+  }
+  
+  .navbar li:hover ul {
+    display: block;
+  }
+
+  .navbar ul ul li a:hover {
+    background-color: rgb(201, 51, 247);
+  }
+
+.navbar a:hover{
+    background-color: rgb(201, 51, 247);
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.contactContainer {
+    display: flex;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+.contactColumn, .suggestionColumn {
+    flex: 50%;
+}
+
+.contactHeader, .suggestionHeader {
+    padding-left: 20px;
+    font-size: 20px;
+    
+}
+
+.contact, .suggestion {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+label {
+    display: block;
+}
+
+#name, #email, #message, #name2, #email2, #message2 {
+    width: 400px;
+}
+
+#message, #message2 {
+    height: 100px
+
+}
+
+#button, #button2 {
+    padding: 10px 40px;
+    background-color:gold;
+}
+
+.aboutContainer {
+    display: flex;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+.aboutColumn {
+    flex: 70%;
+    padding-right: 300px;
+    padding-left: 50px;
+}
+
+.aboutPicColumn {
+    flex: 30%;
+    padding-right: 50px;
+    justify-content: center;
+}
+
+.aboutPic {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    align-items: center;
+    
+}
+
+.aboutConnect ul {
+    list-style-type: none;
+}
+
+.aboutConnect a {
+    text-decoration: none;
+}
+
+.banner {
+    position: relative;
+}
+
+.bannerImage {
+    display: block;
+    width: 100%;
+}
+
+.bannerOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.25s;
+}
+
+.bannerOverlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.bannerOverlay:hover {
+    opacity: 1;
+}
+
+.bannerOverlay:hover > * {
+    transform: translateY(0);
+}
+
+.bannerTitle {
+    font-size: 6em;
+    font-weight: bold;
+}
+
+.banner_description {
+    font-size: 1.25em; 
+    margin-top: 0.25;
+
+}
+
+td {
+    text-align: center;
+}
+
+img.animated-gif{
+    width: 540px;
+    height: auto;
+  }
+
+td a {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+.blogHeader {
+    padding-top: 50px;
+}
+
+
