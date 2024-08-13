@@ -22,6 +22,11 @@ body {
 
 }
 
+.navbar {
+    position: relative;
+    z-index: 999;
+}
+
 .navbar a {
     display: flex;
     align-items: center;
@@ -32,6 +37,24 @@ body {
     text-align: center;
 }
 
+.navbar ul ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+  }
+
+  .navbar ul ul li {
+    display: block;
+  }
+  
+  .navbar li:hover ul {
+    display: block;
+  }
+
+  .navbar ul ul li a:hover {
+    background-color: rgb(201, 51, 247);
+  }
+
 .navbar a:hover{
     background-color: rgb(201, 51, 247);
 }
@@ -40,18 +63,26 @@ nav li:first-child {
     margin-right: auto;
 }
 
-.contactHeader {
+.contactContainer {
+    display: flex;
     padding-top: 50px;
-    padding-left: 50px;
+    font-size: 20px;
+}
+
+.contactColumn, .suggestionColumn {
+    flex: 50%;
+}
+
+.contactHeader, .suggestionHeader {
+    padding-left: 20px;
     font-size: 20px;
     
 }
 
-.contact {
+.contact, .suggestion {
     display: flex;
     flex-direction: column;
-    padding-left: 50px;
-    width: 400px;
+    padding-left: 20px;
     font-size: 20px;
 }
 
@@ -59,16 +90,16 @@ label {
     display: block;
 }
 
-#id, #name, #email, #message {
+#name, #email, #message, #name2, #email2, #message2 {
     width: 400px;
 }
 
-#message {
+#message, #message2 {
     height: 100px
 
 }
 
-#button {
+#button, #button2 {
     padding: 10px 40px;
     background-color:gold;
 }
@@ -156,43 +187,26 @@ label {
 
 }
 
-.cards {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding-top: 30px;
+td {
+    text-align: center;
 }
 
-.card {
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-    border: 1px solid black;
-}
+img.animated-gif{
+    width: 540px;
+    height: auto;
+  }
 
-.cardImage {
-    width: 100%;
-    display: block;
-}
-
-.cardContent {
-    line-height: 1.5;
-    font-size: 0.9em;
-    padding: 5%;
-}
-
-.cardInfo {
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    background: rgb(241, 237, 245);
-}
-.cardInfo a {
+td a {
     color: blueviolet;
     text-decoration: none;
 }
 
-.cardInfo:hover {
+td a:hover {
     text-decoration: underline;
+}
+
+.blogHeader {
+    padding-top: 50px;
 }
 
 
